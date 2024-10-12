@@ -11,11 +11,12 @@ const Symptoms = ({ symptoms }: SymptomsProps) => {
   const handleSelectSymptom = (e: { preventDefault: () => void }, symptom: SymptomType) => {
     e.preventDefault();
     setSearchText("");
-    selectedSymptoms.some((selected: SymptomType) => selected.name === symptom.name)
-      ? setSelectedSymptoms(
-          selectedSymptoms.filter((selected: SymptomType) => selected.name !== symptom.name)
-        )
-      : setSelectedSymptoms([...selectedSymptoms, symptom]);
+
+    if (selectedSymptoms.some((selected: SymptomType) => selected.name === symptom.name)) {
+      setSelectedSymptoms((prev) =>
+        prev.filter((selected: SymptomType) => selected.name !== symptom.name)
+      )
+    }else setSelectedSymptoms((prev) => [...prev, symptom]);
   };
 
   return (

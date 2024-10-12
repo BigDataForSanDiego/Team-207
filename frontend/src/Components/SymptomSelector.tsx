@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import useGlobal from "../Store/useGlobal";
 
 const SymptomSelector = () => {
+  symptoms.sort((a, b) => a.name.localeCompare(b.name));
   const [filteredSymptoms, setFilteredSymptoms] = useState(symptoms);
   const {searchText, selectedSymptoms} = useGlobal();
 
