@@ -8,7 +8,6 @@
 ##### `We are building an app that recommends a health specialist that best suits a patient's needs.`
 
 
-#### A visual
 ![image](images/image.png)
 
 #### Hackathon Five CORE Themes. `CHECK ONE or TWO QUESTIONS (insert X in [ ])`.
