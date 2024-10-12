@@ -1,0 +1,366 @@
+[
+    {
+        "name": "Redness Of Eyes",
+        "description": "Inflammation causing eye redness and discomfort."
+    },
+    {
+        "name": "Visual Disturbances",
+        "description": "Blurred vision or difficulty focusing on objects."
+    },
+    {
+        "name": "Congestion",
+        "description": "Nasal blockage causing difficulty in breathing."
+    },
+    {
+        "name": "Dark Urine",
+        "description": "Urine appears darker than usual due to dehydration."
+    },
+    {
+        "name": "Lethargy",
+        "description": "Extreme tiredness or lack of energy and motivation."
+    },
+    {
+        "name": "Neck Pain",
+        "description": "Discomfort or stiffness in the neck area."
+    },
+    {
+        "name": "Bloody Stool",
+        "description": "Presence of blood in the stool indicating bleeding."
+    },
+    {
+        "name": "Ulcers On Tongue",
+        "description": "Painful sores forming on the tongue surface."
+    },
+    {
+        "name": "Swollen Extremities",
+        "description": "Abnormal swelling in the arms or legs."
+    },
+    {
+        "name": "Foul Smell Of Urine",
+        "description": "Urine emits a strong and unpleasant odor."
+    },
+    {
+        "name": "Skin Rash",
+        "description": "Inflamed or irritated skin causing redness or itchiness."
+    },
+    {
+        "name": "Polyuria",
+        "description": "Excessive urination, often a symptom of diabetes."
+    },
+    {
+        "name": "Movement Stiffness",
+        "description": "Difficulty moving joints or muscles freely."
+    },
+    {
+        "name": "Yellowing Of Eyes",
+        "description": "Jaundice, leading to yellow discoloration in eyes."
+    },
+    {
+        "name": "Drying And Tingling Lips",
+        "description": "Lips feel dry and tingling due to dehydration."
+    },
+    {
+        "name": "Red Spots Over Body",
+        "description": "Small red patches appearing on the skin."
+    },
+    {
+        "name": "Vomiting",
+        "description": "Forceful expulsion of stomach contents through the mouth."
+    },
+    {
+        "name": "Slurred Speech",
+        "description": "Difficulty speaking clearly or coherently."
+    },
+    {
+        "name": "Extra Marital Contacts",
+        "description": "Engagement in intimate relationships outside marriage."
+    },
+    {
+        "name": "Passage Of Gases",
+        "description": "Expelling air through flatulence or burping."
+    },
+    {
+        "name": "Cold Hands And Feets",
+        "description": "Extremities feel cold due to poor circulation."
+    },
+    {
+        "name": "Loss Of Appetite",
+        "description": "Reduced desire to eat or lack of hunger."
+    },
+    {
+        "name": "Cramps",
+        "description": "Painful muscle contractions, often in the abdomen."
+    },
+    {
+        "name": "Nodal Skin Eruptions",
+        "description": "Small, raised bumps forming on the skin."
+    },
+    {
+        "name": "Loss Of Balance",
+        "description": "Difficulty in maintaining physical stability."
+    },
+    {
+        "name": "Swelled Lymph Nodes",
+        "description": "Enlarged lymph nodes due to infection or illness."
+    },
+    {
+        "name": "Irritability",
+        "description": "Easily annoyed or quick to become frustrated."
+    },
+    {
+        "name": "Continuous Sneezing",
+        "description": "Repeated sneezing, often due to allergies."
+    },
+    {
+        "name": "Sinus Pressure",
+        "description": "Pressure or pain in the sinus cavities."
+    },
+    {
+        "name": "Blackheads",
+        "description": "Small dark spots on the skin due to clogged pores."
+    },
+    {
+        "name": "Red Sore Around Nose",
+        "description": "Painful red lesion appearing near the nose."
+    },
+    {
+        "name": "Chills",
+        "description": "Sensation of coldness often associated with fever."
+    },
+    {
+        "name": "Irregular Sugar Level",
+        "description": "Blood sugar fluctuates abnormally, often a sign of diabetes."
+    },
+    {
+        "name": "Shivering",
+        "description": "Involuntary trembling, often due to cold or fever."
+    },
+    {
+        "name": "Unsteadiness",
+        "description": "Lack of stability or control while moving."
+    },
+    {
+        "name": "Indigestion",
+        "description": "Discomfort or pain in the stomach after eating."
+    },
+    {
+        "name": "Itching",
+        "description": "Uncomfortable sensation causing a need to scratch."
+    },
+    {
+        "name": "Rusty Sputum",
+        "description": "Phlegm with a rusty color, possibly indicating infection."
+    },
+    {
+        "name": "Chest Pain",
+        "description": "Discomfort or pain felt in the chest area."
+    },
+    {
+        "name": "Phlegm",
+        "description": "Thick mucus produced by the respiratory tract."
+    },
+    {
+        "name": "Loss Of Smell",
+        "description": "Inability to detect odors, also called anosmia."
+    },
+    {
+        "name": "Acidity",
+        "description": "Excess stomach acid causing discomfort or heartburn."
+    },
+    {
+        "name": "Yellowish Skin",
+        "description": "Skin takes on a yellow hue, often from jaundice."
+    },
+    {
+        "name": "Increased Appetite",
+        "description": "Abnormally high hunger or craving for food."
+    },
+    {
+        "name": "Fluid Overload",
+        "description": "Excess fluid retention, leading to swelling."
+    },
+    {
+        "name": "Prominent Veins On Calf",
+        "description": "Visible, enlarged veins on the calf area."
+    },
+    {
+        "name": "Brittle Nails",
+        "description": "Weak, easily breakable nails due to poor health."
+    },
+    {
+        "name": "Altered Sensorium",
+        "description": "Confusion or impaired consciousness and awareness."
+    },
+    {
+        "name": "Cough",
+        "description": "Forceful expulsion of air to clear the throat."
+    },
+    {
+        "name": "Runny Nose",
+        "description": "Excessive mucus discharge from the nose."
+    },
+    {
+        "name": "Receiving Blood Transfusion",
+        "description": "The process of receiving blood from a donor."
+    },
+    {
+        "name": "Joint Pain",
+        "description": "Discomfort or pain in the joints."
+    },
+    {
+        "name": "Pus Filled Pimples",
+        "description": "Pimples filled with pus indicating infection."
+    },
+    {
+        "name": "Headache",
+        "description": "Pain or discomfort in the head region."
+    },
+    {
+        "name": "Sunken Eyes",
+        "description": "Eyes appear hollow or recessed due to dehydration."
+    },
+    {
+        "name": "Hip Joint Pain",
+        "description": "Pain occurring in the hip joint area."
+    },
+    {
+        "name": "Constipation",
+        "description": "Difficulty or infrequent bowel movements."
+    },
+    {
+        "name": "Swollen Legs",
+        "description": "Legs appear enlarged due to fluid retention."
+    },
+    {
+        "name": "Painful Walking",
+        "description": "Discomfort or pain while walking."
+    },
+    {
+        "name": "Fast Heart Rate",
+        "description": "Abnormally high heartbeat, also called tachycardia."
+    },
+    {
+        "name": "Restlessness",
+        "description": "Inability to relax or stay still."
+    },
+    {
+        "name": "Continuous Feel Of Urine",
+        "description": "Persistent urge to urinate, even after emptying bladder."
+    },
+    {
+        "name": "Nausea",
+        "description": "Unpleasant sensation often leading to vomiting."
+    },
+    {
+        "name": "Acute Liver Failure",
+        "description": "Rapid deterioration of liver function."
+    },
+    {
+        "name": "Muscle Wasting",
+        "description": "Loss of muscle mass and strength."
+    },
+    {
+        "name": "Sweating",
+        "description": "Excess perspiration often due to heat or stress."
+    },
+    {
+        "name": "Enlarged Thyroid",
+        "description": "Swollen thyroid gland, often visible in the neck."
+    },
+    {
+        "name": "Malaise",
+        "description": "General feeling of discomfort or uneasiness."
+    },
+    {
+        "name": "Depression",
+        "description": "Persistent feeling of sadness or loss of interest."
+    },
+    {
+        "name": "Palpitations",
+        "description": "Irregular or rapid heartbeats felt as pounding."
+    },
+    {
+        "name": "Weightloss",
+        "description": "Unintentional loss of body weight."
+    },
+    {
+        "name": "Anxiety",
+        "description": "Excessive worry or fear about everyday situations."
+    },
+    {
+        "name": "Spotting Urination",
+        "description": "Small amounts of urine discharged involuntarily."
+    },
+    {
+        "name": "Excessive Hunger",
+        "description": "Intense craving for food, often uncontrollable."
+    },
+    {
+        "name": "Weakness Of One Body Side",
+        "description": "Loss of strength in one side of the body."
+    },
+    {
+        "name": "Blister",
+        "description": "Fluid-filled bump on the skin due to irritation."
+    },
+    {
+        "name": "High Fever",
+        "description": "Abnormally elevated body temperature, often indicating infection."
+    },
+    {
+        "name": "Dehydration",
+        "description": "Loss of fluids leading to excessive thirst and weakness."
+    },
+    {
+        "name": "Diarrhea",
+        "description": "Frequent loose or watery bowel movements."
+    },
+    {
+        "name": "Swollen Blood Vessels",
+        "description": "Visible enlargement of veins due to poor circulation."
+    },
+    {
+        "name": "Pain Behind The Eyes",
+        "description": "Discomfort or aching sensation felt behind the eyes."
+    },
+    {
+        "name": "Muscle Pain",
+        "description": "Discomfort or soreness in the muscles."
+    },
+    {
+        "name": "Burning Micturition",
+        "description": "Painful or burning sensation during urination."
+    },
+    {
+        "name": "Back Pain",
+        "description": "Discomfort or pain felt in the back."
+    },
+    {
+        "name": "Fatigue",
+        "description": "Extreme tiredness or lack of energy."
+    },
+    {
+        "name": "Pain In Anal Region",
+        "description": "Discomfort or pain in the area around the anus."
+    },
+    {
+        "name": "Abdominal Pain",
+        "description": "Discomfort or pain felt in the stomach area."
+    },
+    {
+        "name": "Stomach Bleeding",
+        "description": "Loss of blood from the stomach, causing black stools."
+    },
+    {
+        "name": "Breathlessness",
+        "description": "Shortness of breath or difficulty breathing."
+    },
+    {
+        "name": "Dizziness",
+        "description": "Feeling lightheaded or unsteady on one's feet."
+    },
+    {
+        "name": "Yellow Crust Ooze",
+        "description": "Yellowish fluid oozing from skin sores."
+    }
+]

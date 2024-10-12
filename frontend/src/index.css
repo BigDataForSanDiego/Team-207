@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-box:focus {
+  border: none;
+  outline: none;  
+}
