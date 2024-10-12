@@ -3,11 +3,14 @@ import TagInput from "./TagInput";
 import symptoms from "../Data/symptoms.json";
 import { useEffect, useState } from "react";
 import useGlobal from "../Store/useGlobal";
+import toast from "react-hot-toast";
+import usePOST from "../Hooks/usePOST";
 
 const SymptomSelector = () => {
   symptoms.sort((a, b) => a.name.localeCompare(b.name));
   const [filteredSymptoms, setFilteredSymptoms] = useState(symptoms);
-  const {searchText, selectedSymptoms} = useGlobal();
+  const { searchText, selectedSymptoms } = useGlobal();
+  const { post } = usePOST();
 
   useEffect(() => {
     setFilteredSymptoms(
@@ -15,8 +18,21 @@ const SymptomSelector = () => {
     );
   }, [symptoms, searchText]);
 
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    
+    post({
+      url: "/api/predict/disease",
+      body: selectedSymptoms,
+      handleData: (data) => toast.success(data.prediction),
+    });
+  };
+
   return (
-    <form className="card bg-[#15191E] dark:bg-base-300 p-4 w-[800px] max-h-[500px]">
+    <form
+      className="card bg-[#15191E] dark:bg-base-300 p-4 w-[800px] max-h-[500px]"
+      onSubmit={handleSubmit}
+    >
       <p className="text-xl font-bold mb-4 border-b pb-2 text-white">Select Symptoms</p>
       <TagInput />
       <Symptoms symptoms={filteredSymptoms} />
