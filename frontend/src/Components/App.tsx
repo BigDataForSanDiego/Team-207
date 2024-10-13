@@ -1,4 +1,4 @@
-import SymptomSelector from "./Components/SymptomSelector"
+import SymptomSelector from "./SymptomSelector/SymptomSelector.tsx"
 
 const App = () => {
   return (

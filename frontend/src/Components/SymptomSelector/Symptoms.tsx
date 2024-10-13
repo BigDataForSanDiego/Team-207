@@ -1,5 +1,5 @@
-import { SymptomType } from "../Utils/Types";
-import useGlobal from "../Store/useGlobal";
+import { SymptomType } from "../../Utils/Types";
+import useGlobal from "../../Store/useGlobal";
 
 interface SymptomsProps {
   symptoms: SymptomType[];
@@ -26,6 +26,7 @@ const Symptoms = ({ symptoms }: SymptomsProps) => {
           className={`card bg-[#1D232A] dark:bg-base-100 text-gray-400 flex flex-row items-center gap-4 px-4 py-2 text-left group`}
           onClick={(e) => handleSelectSymptom(e, symptom)}
           key={symptom.name}
+          type="button"
         >
           <div className="flex flex-1 flex-col">
             <label

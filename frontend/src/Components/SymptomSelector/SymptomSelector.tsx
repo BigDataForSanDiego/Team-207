@@ -1,16 +1,15 @@
 import Symptoms from "./Symptoms";
 import TagInput from "./TagInput";
-import symptoms from "../Data/symptoms.json";
-import rawSymptoms from "../Data/rawSymptoms.json";
+import symptoms from "../../Data/symptoms.json";
+import rawSymptoms from "../../Data/rawSymptoms.json";
 import { useEffect, useState } from "react";
-import useGlobal from "../Store/useGlobal";
-import toast from "react-hot-toast";
-import usePOST from "../Hooks/usePOST";
+import useGlobal from "../../Store/useGlobal";
+import usePOST from "../../Hooks/usePOST";
 
 const SymptomSelector = () => {
   symptoms.sort((a, b) => a.name.localeCompare(b.name));
   const [filteredSymptoms, setFilteredSymptoms] = useState(symptoms);
-  const { searchText, selectedSymptoms } = useGlobal();
+  const { searchText, selectedSymptoms, setDiseases } = useGlobal();
   const { post } = usePOST();
 
   useEffect(() => {
@@ -28,7 +27,7 @@ const SymptomSelector = () => {
     post({
       url: "/api/predict/disease",
       body: rawSymptoms.map((symptom) => (formattedSymptoms.includes(symptom) ? 1 : 0)),
-      handleData: (data) => toast.success(data.prediction),
+      handleData: (data) => setDiseases(data),
     });
   };
 

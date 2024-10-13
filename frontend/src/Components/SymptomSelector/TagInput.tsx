@@ -1,5 +1,5 @@
-import useGlobal from "../Store/useGlobal";
-import { SymptomType } from "../Utils/Types";
+import useGlobal from "../../Store/useGlobal";
+import { SymptomType } from "../../Utils/Types";
 
 const TagInput = () => {
   const { searchText, setSearchText, selectedSymptoms, setSelectedSymptoms } = useGlobal();
