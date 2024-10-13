@@ -1,6 +1,7 @@
 import Symptoms from "./Symptoms";
 import TagInput from "./TagInput";
 import symptoms from "../Data/symptoms.json";
+import rawSymptoms from "../Data/rawSymptoms.json";
 import { useEffect, useState } from "react";
 import useGlobal from "../Store/useGlobal";
 import toast from "react-hot-toast";
@@ -20,10 +21,13 @@ const SymptomSelector = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    
+    const formattedSymptoms = selectedSymptoms.map((symptom) =>
+      symptom.name.toLowerCase().replace(/ /g, "_")
+    );
+
     post({
       url: "/api/predict/disease",
-      body: selectedSymptoms,
+      body: rawSymptoms.map((symptom) => (formattedSymptoms.includes(symptom) ? 1 : 0)),
       handleData: (data) => toast.success(data.prediction),
     });
   };
