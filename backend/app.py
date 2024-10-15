@@ -19,14 +19,14 @@ def predict_disease():
     
     prediction = model.predict(np.array(data).reshape(1, -1))
     prediction = str(prediction[0])
-
+    
     disease = diseases.loc[prediction].to_dict()
     disease['name'] = prediction
     disease['description'] = disease.pop('Description')
     disease['precautions'] = [value for key, value in disease.items() if 'Precaution' in key]
     disease = {key: value for key, value in disease.items() if 'Precaution' not in key}
     
-    return jsonify(disease), 200
+    return jsonify([disease]), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
