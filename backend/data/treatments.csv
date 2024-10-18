@@ -1,0 +1,42 @@
+Disease,Treatment_1,Treatment_2,Treatment_3,Treatment_4
+Drug Reaction,antihistamines,corticosteroids,consult doctor,epinephrine if severe
+Malaria,antimalarial medication,fever management,hydration,consult doctor
+Allergy,antihistamines,topical corticosteroids,consult doctor,immunotherapy if severe
+Hypothyroidism,thyroid hormone replacement,dietary iodine supplements,regular monitoring,consult doctor
+Psoriasis,topical corticosteroids,light therapy,immunosuppressants,consult doctor
+GERD,antacids,H2 blockers,proton pump inhibitors,consult doctor
+Chronic cholestasis,ursodeoxycholic acid,cholestyramine,consult doctor,vitamin supplements
+hepatitis A,rest,hydration,consult doctor,liver-protective diet
+Osteoarthristis,pain relievers,physical therapy,joint injections,consult doctor
+(vertigo) Paroymsal Positional Vertigo,Epley maneuver,vestibular therapy,anti-nausea meds,consult doctor
+Hypoglycemia,glucose tablets,glucagon injection,regular small meals,consult doctor
+Acne,benzoyl peroxide,topical retinoids,antibiotics,consult dermatologist
+Diabetes,insulin or oral meds,dietary management,blood sugar monitoring,consult doctor
+Impetigo,topical antibiotics,oral antibiotics,clean affected area,consult doctor
+Hypertension,antihypertensive meds,dietary changes,exercise,consult doctor
+Peptic ulcer diseae,proton pump inhibitors,antibiotics if H. pylori present,antacids,consult doctor
+Dimorphic hemorrhoids(piles),topical treatments,anti-inflammatory drugs,banding procedure,consult doctor
+Common Cold,decongestants,rest,fluids,pain relievers
+Chicken pox,antiviral meds,calamine lotion,antihistamines,consult doctor
+Cervical spondylosis,physical therapy,pain relievers,muscle relaxants,consult doctor
+Hyperthyroidism,anti-thyroid meds,radioactive iodine,surgery,consult doctor
+Urinary tract infection,antibiotics,hydration,pain relievers,consult doctor
+Varicose veins,compression stockings,laser therapy,sclerotherapy,consult doctor
+AIDS,antiretroviral therapy,regular blood monitoring,treatment for opportunistic infections,consult doctor
+Paralysis (brain hemorrhage),physical therapy,rehabilitation,surgery if necessary,consult doctor
+Typhoid,antibiotics,hydration,rest,consult doctor
+Hepatitis B,antiviral meds,liver monitoring,vaccination,consult doctor
+Fungal infection,antifungal cream,oral antifungal meds,keep area dry,consult doctor
+Hepatitis C,antiviral meds,direct-acting antivirals,liver monitoring,consult doctor
+Migraine,pain relievers,triptans,preventative medications,consult doctor
+Bronchial Asthma,bronchodilators,inhaled corticosteroids,oxygen therapy,consult doctor
+Alcoholic hepatitis,stop alcohol intake,steroids,vitamin supplementation,consult doctor
+Jaundice,rest,hydration,cholestyramine if itching,consult doctor
+Hepatitis E,rest,hydration,avoid alcohol,consult doctor
+Dengue,hydration,pain relievers (avoid NSAIDs),monitor platelet count,consult doctor
+Hepatitis D,antiviral meds,regular liver monitoring,consult doctor,liver transplant in severe cases
+Heart attack,aspirin,nitroglycerin,blood thinners,consult doctor
+Pneumonia,antibiotics if bacterial,antiviral meds,rest,consult doctor
+Arthritis,NSAIDs,DMARDs,physical therapy,consult doctor
+Gastroenteritis,rehydration,antidiarrheal meds,rest,consult doctor
+Tuberculosis,antibiotics for several months,rest,nutritional support,consult doctor

@@ -5,8 +5,10 @@ export interface SymptomType {
 
 export interface DiseaseType {
   name: string;
+  probability: number;
   description: string;
   precautions: string[];
+  treatments: string[];
 }
 
 export interface DoctorType {

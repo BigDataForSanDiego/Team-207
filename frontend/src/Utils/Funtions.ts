@@ -9,3 +9,7 @@ export const createSetter =
           ? (value as (prev: StoreType[T]) => StoreType[T])(state[key])
           : value,
     }));
+
+export const capitalize = (str: string) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};

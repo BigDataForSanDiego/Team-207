@@ -27,7 +27,7 @@ const SymptomSelector = () => {
     post({
       url: "/api/predict/disease",
       body: rawSymptoms.map((symptom) => (formattedSymptoms.includes(symptom) ? 1 : 0)),
-      handleData: (data) => setDiseases(data),
+      handleData: (diseases) => setDiseases(diseases),
     });
   };
 
