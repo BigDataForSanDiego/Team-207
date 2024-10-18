@@ -9,8 +9,8 @@ import usePOST from "../../Hooks/usePOST";
 const SymptomSelector = () => {
   symptoms.sort((a, b) => a.name.localeCompare(b.name));
   const [filteredSymptoms, setFilteredSymptoms] = useState(symptoms);
-  const { searchText, selectedSymptoms, setDiseases } = useGlobal();
-  const { post } = usePOST();
+  const { searchText, selectedSymptoms, diseases, setDiseases } = useGlobal();
+  const { loading, post } = usePOST();
 
   useEffect(() => {
     setFilteredSymptoms(
@@ -18,16 +18,25 @@ const SymptomSelector = () => {
     );
   }, [symptoms, searchText]);
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const formattedSymptoms = selectedSymptoms.map((symptom) =>
       symptom.name.toLowerCase().replace(/ /g, "_")
     );
 
-    post({
+    await post({
       url: "/api/predict/disease",
       body: rawSymptoms.map((symptom) => (formattedSymptoms.includes(symptom) ? 1 : 0)),
-      handleData: (diseases) => setDiseases(diseases),
+      handleData: (data) => setDiseases(data),
+    });
+
+    await post({
+      url: "/api/predict/doctor",
+      body: diseases.map((disease) => ({
+        disease: disease.name.toLowerCase(),
+        probability: disease.probability,
+      })),
+      handleData: (data) => console.log(data),
     });
   };
 
@@ -44,7 +53,7 @@ const SymptomSelector = () => {
         disabled={selectedSymptoms.length == 0}
         type="submit"
       >
-        {"Search Diseases"}
+        {loading ? <span className="loading loading-dots" /> : "Search Diseases"}
       </button>
     </form>
   );
