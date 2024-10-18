@@ -41,10 +41,10 @@ def predict_disease():
     Y_probs = model.predict_proba(X)
     
     labels = model.classes_
-    top_preds = np.argsort(Y_probs, axis=1)[:, -3:][:, ::-1]
+    top = np.argsort(Y_probs, axis=1)[:, -3:][:, ::-1]
 
-    predictions = [{'prediction': labels[top_preds[0, j]], "probability": Y_probs[0, top_preds[0, j]]} for j in range(3)]
-    diseases = [get_disease(**prediction) for prediction in predictions]
+    get_pred = lambda i: {'prediction': labels[top[0, i]], "probability": Y_probs[0, top[0, i]]}
+    diseases = [get_disease(**get_pred(i)) for i in range(3)]
     
     return jsonify(diseases), 200
 
@@ -71,7 +71,6 @@ def predict_doctor():
     only_positive_scores = with_scores.query('Score > 0').sort_values('Score', ascending = False)
     cleaned_dict = only_positive_scores.drop('Unnamed: 0', axis=1).fillna(-1).to_dict('records')
     
-    print(cleaned_dict)
     return jsonify(cleaned_dict), 200
 
 if __name__ == '__main__':
