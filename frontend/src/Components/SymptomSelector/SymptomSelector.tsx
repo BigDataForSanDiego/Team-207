@@ -5,11 +5,12 @@ import rawSymptoms from "../../Data/rawSymptoms.json";
 import { useEffect, useState } from "react";
 import useGlobal from "../../Store/useGlobal";
 import usePOST from "../../Hooks/usePOST";
+import { DiseaseType } from "../../Utils/Types";
 
 const SymptomSelector = () => {
   symptoms.sort((a, b) => a.name.localeCompare(b.name));
   const [filteredSymptoms, setFilteredSymptoms] = useState(symptoms);
-  const { searchText, selectedSymptoms, diseases, setDiseases } = useGlobal();
+  const { searchText, selectedSymptoms, setDiseases, setDoctors } = useGlobal();
   const { loading, post } = usePOST();
 
   useEffect(() => {
@@ -27,16 +28,17 @@ const SymptomSelector = () => {
     await post({
       url: "/api/predict/disease",
       body: rawSymptoms.map((symptom) => (formattedSymptoms.includes(symptom) ? 1 : 0)),
-      handleData: (data) => setDiseases(data),
-    });
-
-    await post({
-      url: "/api/predict/doctor",
-      body: diseases.map((disease) => ({
-        disease: disease.name.toLowerCase(),
-        probability: disease.probability,
-      })),
-      handleData: (data) => console.log(data),
+      handleData: (diseaseData: DiseaseType[]) => {
+        setDiseases(diseaseData);
+        post({
+          url: "/api/predict/doctor",
+          body: diseaseData.map((disease) => ({
+            disease: disease.name.toLowerCase(),
+            probability: disease.probability,
+          })),
+          handleData: (doctorData) => setDoctors(doctorData),
+        });
+      },
     });
   };
 

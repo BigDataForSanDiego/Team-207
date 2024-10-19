@@ -61,14 +61,14 @@ def predict_doctor():
     disease_inputs = request.get_json()
     
     cleaned_doctors = doctors.copy()
-    cleaned_doctors['Location'] = doctors['Location'].transform(ast.literal_eval)
-    cleaned_doctors['Specialty'] = doctors['Specialty'].transform(ast.literal_eval)
-    cleaned_doctors['Phone Number'] = doctors['Phone Number'].transform(ast.literal_eval)
+    cleaned_doctors['specialties'] = doctors['specialties'].transform(ast.literal_eval)
+    cleaned_doctors['locations'] = doctors['locations'].transform(ast.literal_eval)
+    cleaned_doctors['contacts'] = doctors['contacts'].transform(ast.literal_eval)
     
-    scores = cleaned_doctors['Specialty'].apply(lambda x: get_specialty_score(x, disease_inputs))
-    with_scores = cleaned_doctors.assign(Score = scores)
+    scores = cleaned_doctors['specialties'].apply(lambda x: get_specialty_score(x, disease_inputs))
+    with_scores = cleaned_doctors.assign(score=scores)
 
-    only_positive_scores = with_scores.query('Score > 0').sort_values('Score', ascending = False)
+    only_positive_scores = with_scores.query('score > 0').sort_values('score', ascending = False)
     cleaned_dict = only_positive_scores.drop('Unnamed: 0', axis=1).fillna(-1).to_dict('records')
     
     return jsonify(cleaned_dict), 200

@@ -13,3 +13,16 @@ export const createSetter =
 export const capitalize = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
+
+export const round = (value: number, step = 1) => {
+  return Math.round(value / step) * step;
+};
+
+export const format_phone_number = (value: string) => {
+  value = value.toString().replace(/\D/g, "");
+  if (value.length !== 10 && value.length !== 11) return "Invalid phone number";
+
+  return value.length === 11
+    ? `+${value[0]} (${value.slice(1, 4)}) ${value.slice(4, 7)}-${value.slice(7)}`
+    : `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6)}`;
+};

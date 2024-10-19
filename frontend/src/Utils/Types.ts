@@ -13,11 +13,10 @@ export interface DiseaseType {
 
 export interface DoctorType {
   name: string;
-  image: string;
-  description: string;
-  specializations: string[];
-  contact: string;
-  location: string;
+  picture: string;
+  specialties: string[];
+  contacts: string[];
+  locations: string[];
   rating: number;
-  reviews: number;
+  score: number;
 }

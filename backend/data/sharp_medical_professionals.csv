@@ -1,4 +1,4 @@
-,Name,Location,Specialty,Picture,Phone Number,Rating
+,name,locations,specialties,picture,contacts,rating
 0,"Frank Yoo, MD",['4150 Regents Park Row'],['Neurological surgery'],https://images.ctfassets.net/pxcfulgsd9e2/4vtfSBGmp3LQhKtvjw2JIC/d0f2094db56d33c832190f5e281156e5/Placeholder_image.png?f=face&fit=fill&fm=webp&h=2792&q=35&w=2792,[18589099033],
 1,"Daniel Burgess, DO","['477 N El Camino Real', '4150 Regents Park Row']",['General surgery'],https://images.ctfassets.net/pxcfulgsd9e2/4vtfSBGmp3LQhKtvjw2JIC/d0f2094db56d33c832190f5e281156e5/Placeholder_image.png?f=face&fit=fill&fm=webp&h=2792&q=35&w=2792,"[17604368881, 18582073117]",
 2,"Matthew Schultzel, DO","['4150 Regents Park Row', '477 N El Camino Real']","['Colon and rectal surgery', 'General surgery']",https://images.ctfassets.net/pxcfulgsd9e2/35gYMnd3UgUnlyo7Nxov7a/84789b243114d38e4685a3a5c3dfe61e/schultzel_matthew_88662_2019.jpg?f=face&fit=fill&fm=webp&h=2792&q=35&w=2792,"[18582073117, 18582073117]",
