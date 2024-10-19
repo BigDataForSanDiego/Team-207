@@ -26,3 +26,10 @@ export const format_phone_number = (value: string) => {
     ? `+${value[0]} (${value.slice(1, 4)}) ${value.slice(4, 7)}-${value.slice(7)}`
     : `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6)}`;
 };
+
+export const kebabCase = (str: string) => {
+  return str
+    .replace(/([a-z])([A-Z])/g, "$1-$2")
+    .replace(/[\s_]+/g, "-")
+    .toLowerCase();
+};

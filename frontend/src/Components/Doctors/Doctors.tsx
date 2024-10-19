@@ -1,6 +1,6 @@
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import useGlobal from "../../Store/useGlobal";
-import { format_phone_number } from "../../Utils/Funtions";
+import { format_phone_number, kebabCase } from "../../Utils/Funtions";
 import Stars from "./Stars";
 
 const Doctors = () => {
@@ -22,7 +22,15 @@ const Doctors = () => {
             </div>
           </div>
           <div className="flex flex-col w-full">
-            <h3 className="text-3xl text-white font-semibold">{doctor.name}</h3>
+            <h3 className="text-3xl text-white font-semibold">
+              <a
+                href={`https://www.sharp.com/doctors/${kebabCase(doctor.name.split(",")[0])}`}
+                target="_blank"
+                className="hover:underline"
+              >
+                {doctor.name}
+              </a>
+            </h3>
             <p className="text-gray-400">{doctor.specialties.join(", ")}</p>
             <div className="flex pt-2">
               <div className="flex justify-center items-center gap-1">
